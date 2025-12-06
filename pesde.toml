@@ -24,13 +24,17 @@ default = "https://github.com/pesde-pkg/index"
 default = "https://github.com/UpliftGames/wally-index"
 
 [dependencies]
-LinearInterpolation = { repo = "Story-Bakery/LinearInterpolation", rev = "main" }
-Maid = { repo = "Story-Bakery/Maid", rev = "main" }
-MathUtil = { repo = "Story-Bakery/MathUtil", rev = "main" }
-Signal = { repo = "Story-Bakery/Signal", rev = "main" }
+LinearInterpolation = { repo = "https://github.com/StoryBakery/LinearInterpolation", rev = "main" }
+Maid = { repo = "https://github.com/StoryBakery/Maid", rev = "main" }
+MathUtil = { repo = "https://github.com/StoryBakery/MathUtil", rev = "main" }
+Signal = { repo = "https://github.com/StoryBakery/Signal", rev = "main" }
 
 [scripts]
 roblox_sync_config_generator = ".pesde/scripts/roblox_sync_config_generator.luau"
+sourcemap_generator = ".pesde/scripts/sourcemap_generator.luau"
+
+[dev_dependencies]
+scripts = { name = "pesde/scripts_rojo", version = "^0.2.0", target = "lune" }
 
 [engines]
 pesde = "^0.7.0"
